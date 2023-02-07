@@ -1,0 +1,151 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 20px;
+    padding: 20px;
+    background-image: url(./Assets/Resturant.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+body::before{
+    content:"";
+    filter: blur(8px);
+    background-image: inherit;
+
+}
+
+nav{
+    /* position: absolute; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    /* z-index: 5; */
+    
+/* pta hai ye sab kuchh body ke andar hai isliye sabkuchh blur ho raha  hai     ; */
+    
+}
+.logo{
+    height: 70px;
+    width:70px;
+    
+}
+a{
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+   
+}
+li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+button{
+    background-color:rgb(227, 18, 18);
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    width: fit-content;
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+section{
+    align-items: center;
+    margin-top:100px ;
+    
+}
+.content{
+    font-size:4rem;
+    color:white;
+    text-align: center;
+    font-weight: 900;
+    line-height: 60px;
+
+}
+.btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.btn2{
+    
+    background-color:rgb(227, 18, 18);
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    width: fit-content;
+    padding: 10px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.scroll-img{
+    float: right;
+    margin-right: 100px;
+   
+}
+.lower-img{
+    height: 100px;
+    width: 100px;
+
+}
+
+/* Phone view */
+
+
+
+@media (max-width:600px){
+    body{
+    /* background-color: blue; */
+    padding: 2px;
+    margin: 0;
+    padding: 0;
+        
+    }
+    nav{
+        align-items: start;
+    }
+   nav ul{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    align-items: flex-start;
+    
+
+   }
+   button{
+    order: 1;
+    margin-left: 10px;
+}
+   .logo{
+       height: 50px;
+       width: 50px;
+   }
+   .content{
+    font-size: 2rem;
+    color:white;
+    text-align: center;
+    font-weight: 900;
+    line-height: 60px;
+       }
+
+       .lower-img{
+        height: 50px;
+        width: 50px;
+    
+    }
+}
